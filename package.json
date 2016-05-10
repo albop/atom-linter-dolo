@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "version": "1.3.0",
   "description": "Linter plugin for dolo",
-  "repository": "https://github.com/albop/linter-dolo",
+  "repository": "https://github.com/albop/atom-linter-dolo",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
