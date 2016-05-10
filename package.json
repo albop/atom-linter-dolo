@@ -1,0 +1,31 @@
+{
+  "name": "linter-dolo",
+  "main": "./lib/main",
+  "version": "1.3.0",
+  "description": "Linter plugin for dolo",
+  "repository": "https://github.com/albop/linter-dolo",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "atom-linter": "^4.6.1",
+    "atom-package-deps": "^4.0.1"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "keywords": [
+    "atom",
+    "linter",
+    "yaml",
+    "dolo"
+  ]
+}
