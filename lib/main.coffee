@@ -26,6 +26,7 @@ module.exports =
         helpers ?= require('atom-linter')
         filePath = textEditor.getPath()
         parameters = []
+        parameters.push('--format','json')
         parameters.push('-')
         return helpers.exec(atom.config.get('linter-dolo.exePath'), parameters, {stdin: textEditor.getText()}).then (result) ->
           toReturn = []
