@@ -1,7 +1,7 @@
 {
   "name": "linter-dolo",
   "main": "./lib/main",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Linter plugin for dolo",
   "repository": "https://github.com/albop/atom-linter-dolo",
   "license": "MIT",
