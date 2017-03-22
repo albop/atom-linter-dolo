@@ -25,13 +25,11 @@ module.exports =
       lint: (textEditor)->
         helpers ?= require('atom-linter')
         filePath = textEditor.getPath()
-        parameters = []
-        parameters.push('--format','json')
+        parameters = ['--format=json']
         parameters.push('-')
         return helpers.exec(atom.config.get('linter-dolo.exePath'), parameters, {stdin: textEditor.getText()}).then (result) ->
           toReturn = []
           tt = JSON.parse(result)
-          console.log(tt)
           for el in JSON.parse(result)
               toReturn.push({
                 type: el['type']
@@ -39,7 +37,6 @@ module.exports =
                 filePath
                 range: el['range']
               })
-          console.log(toReturn)
           return toReturn
         #   regex = /stdin:\((\d+), (\d+), (\d+), (\d+)\):(.*)/g
 
